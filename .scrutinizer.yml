@@ -8,6 +8,7 @@ build:
         timezone: 'Europe/London'
     tests:
         override:
+            - php-scrutinizer-run
             -
                 command: 'vendor/bin/phpunit --testsuite all --coverage-clover=coverage.clover'
                 coverage:
