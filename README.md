@@ -28,7 +28,7 @@ A simple example of consuming an API using PHP
  
  $http_client = new Client();
  $file_parser = new YamlParser();
- $config = new Config('path_to_config', $file_parser);
+ $config = new Config('path/to/config.yaml', $file_parser);
  $oauth2_client = new Oauth2Client($http_client, $config); 
  $consumer = new Consumer($oauth2_client);
  

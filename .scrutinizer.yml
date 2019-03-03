@@ -19,7 +19,6 @@ build_failure_conditions:
     - 'issues.label("bug").new.exists'                                # No new bugs
     - 'issues.label("unused-code").new.exists'                        # No unused code
     - 'issues.severity(>= MAJOR).new.exists'                          # New issues of major or higher severity
-    - 'project.metric("scrutinizer.quality", < 8)'                    # Code Quality Rating drops below 8
     - 'project.metric_change("scrutinizer.test_coverage", < -0.05)'   # Code Coverage decreased more than .5% from previous inspection
 
 filter:
