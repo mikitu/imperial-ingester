@@ -10,6 +10,7 @@ A simple example of consuming an API using PHP
  #### Prerequisites
   - php v7.2+
   - composer
+  - ssl certificate .pem file
   - create a config.yaml file and put it in config folder. a config.yaml.dist is already provided and contains necessary values to run the project
   - docker (optional)
  
