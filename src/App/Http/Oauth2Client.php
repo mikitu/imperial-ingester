@@ -73,7 +73,7 @@ class Oauth2Client implements Oauth2ClientInterface
                 $this->config->get('ssl_cert_pass'),
             ],
             RequestOptions::HEADERS => [
-                'Authorization' => 'Rearer ' . $this->access_token,
+                'Authorization' => 'Bearer ' . $this->access_token,
                 'ContentType'   => 'application/json',
                 'x-torpedoes'   => '2',
             ]
